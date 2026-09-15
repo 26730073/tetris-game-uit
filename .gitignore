@@ -1,0 +1,28 @@
+# Môi trường ảo Python
+.venv/
+venv/
+env/
+
+# File biên dịch Python
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+
+# Kiểm thử
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dữ liệu cá nhân của thành viên — có số điện thoại, KHÔNG đưa lên repo public
+ds thanh vien*.txt
