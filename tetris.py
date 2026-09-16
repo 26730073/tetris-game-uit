@@ -106,9 +106,19 @@ def draw():
         print("".join(board[i]))
 
 
-# TODO(SV2): viết hàm remove_line() — xoá những hàng đã đầy, đẩy các hàng
-# phía trên rơi xuống. Xem hàm removeLine trong main.cpp để đối chiếu.
-# Viết xong nhớ gọi nó trong main(), ngay sau block_to_board().
+def remove_line():
+    i = H - 2
+    while i > 0:
+        if " " not in board[i]:
+            for ii in range(i, 1, -1):
+                board[ii] = board[ii - 1][:]
+
+            board[1] = ["#"] + [" "] * (W - 2) + ["#"]
+
+            draw()
+            time.sleep(0.2)
+        else:
+            i -= 1
 
 # TODO(SV4): viết phần xoay khối. Bản C++ chưa có, các phím hiện chỉ có
 # a, d, x, q. Gợi ý: thêm một phím xoay, đổi giá trị b sang trạng thái xoay
@@ -146,7 +156,7 @@ def main():
             y += 1
         else:
             block_to_board()
-            # TODO(SV2): gọi remove_line() ở đây
+            remove_line()
             x = 5
             y = 0
             b = random.randint(0, 6)
