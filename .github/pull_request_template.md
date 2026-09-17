@@ -1,5 +1,7 @@
 ## Việc đã làm
 
+<!-- Viết vài dòng: làm gì, sửa hàm nào. Ghi "Closes #số-issue" để issue tự đóng khi merge. -->
+
 
 ## Loại thay đổi
 - [ ] Tính năng mới (feat)
@@ -8,11 +10,18 @@
 - [ ] Dọn dẹp code (refactor)
 
 ## Đã kiểm tra
-- [ ] Chạy `python main.py` không lỗi
-- [ ] Chạy `python -m pytest` pass hết
+- [ ] Chạy `python tetris.py` không lỗi, chơi thử được
+- [ ] Đã `git pull` nhánh `main` mới nhất trước khi tạo PR
 - [ ] Không commit nhầm `.venv/` hoặc `__pycache__/`
 
-## Ảnh chụp màn hình (nếu đổi giao diện)
+## Có gặp conflict không?
+<!-- Môn học yêu cầu nhóm gặp và xử lý trên 3 conflict. Có thì ghi lại ở đây để làm minh chứng. -->
+- [ ] Không
+- [ ] Có — đụng với phần của: ______ — cách xử lý: ______
+
+## Ảnh chụp màn hình
+
+<!-- Chụp cửa sổ dòng lệnh lúc game đang chạy phần bạn vừa làm. -->
 
 
 ## Ghi chú cho người review
